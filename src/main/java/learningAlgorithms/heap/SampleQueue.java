@@ -1,14 +1,29 @@
 package learningAlgorithms.heap;
 
-public class SamplePriorityQueue<T> {
+public class SampleQueue<T> {
+
+    private class QueueNode<T> {
+        T value;
+        QueueNode<T> next;
+        QueueNode<T> previous;
+
+        QueueNode(T val) {
+            value = val;
+        }
+        QueueNode(T val, QueueNode<T> next, QueueNode<T> prev) {
+            value = val;
+            this.next = next;
+            this.previous = prev;
+        }
+    }
     QueueNode<T> head;
     QueueNode<T> tail;
 
-    public SamplePriorityQueue() {
+    public SampleQueue() {
         head = tail = null;
     }
 
-    public SamplePriorityQueue(T element) {
+    public SampleQueue(T element) {
         head = tail = new QueueNode<>(element);
     }
 
@@ -35,19 +50,4 @@ public class SamplePriorityQueue<T> {
         return;
     }
 
-}
-
-class QueueNode<T> {
-    T value;
-    QueueNode<T> next;
-    QueueNode<T> previous;
-
-    QueueNode(T val) {
-        value = val;
-    }
-    QueueNode(T val, QueueNode<T> next, QueueNode<T> prev) {
-        value = val;
-        this.next = next;
-        this.previous = prev;
-    }
 }

@@ -1,3 +1,5 @@
+package ObjectsArraysCollections;
+
 import java.util.Objects;
 
 public class ObjectsClassUsage {
