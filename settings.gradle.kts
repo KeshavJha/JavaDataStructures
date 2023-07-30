@@ -1,2 +1,2 @@
-rootProject.name = "algoPractice"
+rootProject.name = "JavaDataStructures"
 
