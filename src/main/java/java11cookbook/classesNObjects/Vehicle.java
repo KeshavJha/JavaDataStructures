@@ -1,2 +1,4 @@
-package java11cookbook.classesNObjects;public class Vehicle {
+package java11cookbook.classesNObjects;
+
+public class Vehicle {
 }
